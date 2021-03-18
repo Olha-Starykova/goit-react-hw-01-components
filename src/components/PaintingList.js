@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Painting from './Painting';
 
+
 const PaintingList = ({ paintings }) => (
     <ul>
         {paintings.map(({ id, url, title, price, author, quantity }) => (
@@ -24,7 +25,7 @@ PaintingList.propTypes = {
             id: PropTypes.string.isRequired,
         })
     ).isRequired,
-};
+  };
 
 
 
