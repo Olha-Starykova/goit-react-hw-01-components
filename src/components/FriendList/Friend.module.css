@@ -1,0 +1,26 @@
+ .name  {
+ 
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid red;
+    border:2px solid red;
+    border-radius: 0px 0px 4px 4px
+
+}
+
+
+
+.status_green {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+  
+}
+
+.status_red {
+    composes: status_green;
+    background-color: red;
+}

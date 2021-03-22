@@ -1,13 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import defaultImage from './default.jpg'
+import defaultImage from '../default.jpg'
+import reactDom from 'react-dom';
+import styles from './Friend.module.css'
+
+
 
 const Friend = ({ isOnline, avatar, name }) => (
-    <>
-      <span class="status">{isOnline}</span>
+  <div>
+    <span
+      className={`${isOnline ? styles.status_green : styles.status_red}`} >
+
+       </span>
       <img class="avatar" src={avatar} alt="" width="48"/>
-      <p class="name">{name}</p>
-    </>
+    <p className={styles.name}>{name}</p>
+    </div>
 );
 
 Friend.defaultProps = {
