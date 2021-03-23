@@ -1,26 +1,32 @@
  .name  {
  
-    display:inline-block;
+    /* display:inline-block;
     width: 40px;
     height: 40px;
     outline: 1px solid red;
     border:2px solid red;
-    border-radius: 0px 0px 4px 4px
+    border-radius: 0px 0px 4px 4px */
 
 }
 
-
+.items {
+   display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    width: 300px;
+}
 
 .status_green {
-    display: flex;
     width: 10px;
     height: 10px;
     background-color: green;
     border-radius: 50%;
-  
+   display: block;
+    padding: 10px;
 }
 
 .status_red {
     composes: status_green;
     background-color: red;
 }
+

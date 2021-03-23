@@ -7,14 +7,14 @@ import styles from './Friend.module.css'
 
 
 const Friend = ({ isOnline, avatar, name }) => (
-  <div>
+  <>
     <span
       className={`${isOnline ? styles.status_green : styles.status_red}`} >
 
        </span>
       <img class="avatar" src={avatar} alt="" width="48"/>
     <p className={styles.name}>{name}</p>
-    </div>
+    </>
 );
 
 Friend.defaultProps = {
